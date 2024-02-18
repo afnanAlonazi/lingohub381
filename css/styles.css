@@ -104,7 +104,7 @@ footer{
   background: #7C93C3;
   color: #353535;
   
-  bottom: -60px;
+  bottom: -300px;
   width: 100%;
 }
 .icons h4{
@@ -312,7 +312,8 @@ font-size: small;
   box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
 } 
 
-.ManageProfileBody .left{
+
+.ManageProfileBody .left ,.ManageProfileBody #DeleteProfile{
   width: 40%;
   background: #EEF5FF;
   padding: 30px 25px;
@@ -336,10 +337,33 @@ font-size: small;
   padding: 30px 30px; 
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  
   color: #353535;
   
 
+}
+
+#deletepic{
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 70px;
+  margin-left: 300px;
+ 
+
+}
+#personal-picLabel{
+display: block;
+width: 70px;
+background-color: #c7d3e1;
+color:353535 ;
+padding: 1px;
+margin: 5px auto;
+border-radius: 5px;
+font-size: 10px;
+font-weight: bold;
+
+}
+#personal-pic{
+  display: none;
 }
 
 .ManageProfileBody  .right h3{
@@ -374,9 +398,14 @@ font-size: small;
   margin-left: 100px;
  
 }
-#delet_account{
+.ManageProfileBody .right #delete{
+  margin-top: 20px;
+  margin-left: 200px;
 
-  margin-left: 270px;
+}
+
+#password_deleteaccount{
+  margin-top: 20px;
 
 
 }
@@ -384,7 +413,7 @@ font-size: small;
   width: 75%;
 }
  /* to make our lonks leading to edit and delete page look like buttons */
- .right ul li,#delet_account  {
+ .right ul li {
             display: inline-block;
             position:center;
             padding: 6px 12px;
@@ -395,7 +424,7 @@ font-size: small;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            /* width: 120px; */
+            width: 120px;
             text-align: center;
         }
         #signin{
@@ -426,18 +455,23 @@ font-size: small;
            } 
      /* ****************** buttun format ****************/
 
-#cancel_Edit,#delet_account{
+#cancel_Edit{
   background-color: #d73046;
   border:none;
+  font: 1em sans-serif;
+  color: #353535;
 }
-#cancel_Edit:hover ,#delet_account:hover {
+#cancel_Edit:hover {
   background-color: #e38d99;
 
 }
 #save_Edit{
   background-color: #20bf55;
   border:none;
+  font: 1em sans-serif;
+  color: #353535;
 }
+
 #save_Edit:hover{
   background-color: #86d7a1;
 
