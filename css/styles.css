@@ -104,7 +104,7 @@ footer{
   background: #7C93C3;
   color: #353535;
   
-  bottom: -60px;
+  bottom: -300px;
   width: 100%;
 }
 .icons h4{
@@ -204,8 +204,13 @@ padding-top: 63px;
 
 
 .container {
+<<<<<<< HEAD
   width: 45%;
  height: 80%;
+=======
+   width: 45%;
+ height: 80%; 
+>>>>>>> cad2fa91d821db221af265979db9e0cc4f263108
   position: absolute;
   top: 50%;
   left: 50%;
@@ -213,10 +218,16 @@ padding-top: 63px;
   padding: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+<<<<<<< HEAD
   overflow-y: scroll; /* Add scrollbar when content exceeds viewport height */
 
   transform: translate(-50%, -50%);
 
+=======
+  /* overflow-y: scroll; Add scrollbar when content exceeds viewport height */
+
+  transform: translate(-50%, -50%);
+>>>>>>> cad2fa91d821db221af265979db9e0cc4f263108
   border-radius: 10px;
   text-align: center;
 } 
@@ -226,6 +237,7 @@ padding-top: 63px;
   background: linear-gradient(120deg,  #879fd1 , #9eb8d9 , #eef5ff);
   height: 100vh;
   overflow: hidden;
+ 
 }
 .sign_in , .sign_up{
   position: absolute;
@@ -235,7 +247,9 @@ padding-top: 63px;
   width: 400px;
   background: #ffffff;
   border-radius: 10px;
+
 }
+
 
 .sign_in h2, .sign_upL h2,
 .sign_up h2{
@@ -460,7 +474,8 @@ font-size: small;
   box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
 } 
 
-.ManageProfileBody .left{
+
+.ManageProfileBody .left ,.ManageProfileBody #DeleteProfile{
   width: 40%;
   background: #EEF5FF;
   padding: 30px 25px;
@@ -484,10 +499,33 @@ font-size: small;
   padding: 30px 30px; 
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  
   color: #353535;
   
 
+}
+
+#deletepic{
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 70px;
+  margin-left: 300px;
+ 
+
+}
+#personal-picLabel{
+display: block;
+width: 70px;
+background-color: #c7d3e1;
+color:353535 ;
+padding: 1px;
+margin: 5px auto;
+border-radius: 5px;
+font-size: 10px;
+font-weight: bold;
+
+}
+#personal-pic{
+  display: none;
 }
 
 .ManageProfileBody  .right h3{
@@ -522,9 +560,14 @@ font-size: small;
   margin-left: 100px;
  
 }
-#delet_account{
+.ManageProfileBody .right #delete{
+  margin-top: 20px;
+  margin-left: 200px;
 
-  margin-left: 270px;
+}
+
+#password_deleteaccount{
+  margin-top: 20px;
 
 
 }
@@ -532,7 +575,7 @@ font-size: small;
   width: 75%;
 }
  /* to make our lonks leading to edit and delete page look like buttons */
- .right ul li,#delet_account  {
+ .right ul li {
             display: inline-block;
             position:center;
             padding: 6px 12px;
@@ -543,7 +586,7 @@ font-size: small;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            /* width: 120px; */
+            width: 120px;
             text-align: center;
         }
         #signin{
@@ -574,18 +617,23 @@ font-size: small;
            } 
      /* ****************** buttun format ****************/
 
-#cancel_Edit,#delet_account{
+#cancel_Edit{
   background-color: #d73046;
   border:none;
+  font: 1em sans-serif;
+  color: #353535;
 }
-#cancel_Edit:hover ,#delet_account:hover {
+#cancel_Edit:hover {
   background-color: #e38d99;
 
 }
 #save_Edit{
   background-color: #20bf55;
   border:none;
+  font: 1em sans-serif;
+  color: #353535;
 }
+
 #save_Edit:hover{
   background-color: #86d7a1;
 
@@ -619,6 +667,102 @@ font-size: small;
 
 .insideAbout {
   font-size: 10px;
+}
+
+/* ViewRateAndReviews */
+
+.Rate{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.checked {
+  color: orange;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.unchecked {
+  color: grey;
+}
+
+.SubDiv {
+  display: block;
+  margin-top: 12px;
+  border: 1.5px solid;
+  border-radius: 10px;
+  background-color:#c7d3e1;
+  margin-bottom: 10px;
+  padding: 20px 10px 10px 10px;
+}
+
+.innerDiv {
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+}
+
+.userImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.Reviewers {
+  vertical-align: top;
+  line-height: 35px;
+  margin-left: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  text-align: right;
+}
+
+/* View offers with their Status  */
+.Offers {
+  height: 30px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 70px;
+}
+.even-row {
+  background-color: white;
+}
+
+.Green {
+  color: rgb(39, 141, 7);
+}
+
+.Red {
+  color: rgb(254, 9, 9);
+}
+
+.Gray {
+  color: rgb(112, 113, 112);
+}
+
+.tableReq {
+  
+  border-spacing: 1;
+  /* border-collapse: collapse;  */
+  background-color:#c7d3e1 ;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border-style: solid;
+  border: 2px ;
+  text-align: center;
+  border-color: black;
 }
 
 
