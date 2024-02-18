@@ -201,12 +201,31 @@ padding-top: 63px;
 }
 /* end oflearnerhomepage + partnerhomepage  */
 /* login + signup layout */
+
+
+.container {
+   width: 45%;
+ height: 80%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  /* overflow-y: scroll; Add scrollbar when content exceeds viewport height */
+
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  text-align: center;
+} 
 #signInBody{
   margin: 0;
   padding: 0;
   background: linear-gradient(120deg,  #879fd1 , #9eb8d9 , #eef5ff);
   height: 100vh;
   overflow: hidden;
+ 
 }
 .sign_in , .sign_up{
   position: absolute;
@@ -216,7 +235,9 @@ padding-top: 63px;
   width: 400px;
   background: #ffffff;
   border-radius: 10px;
+
 }
+
 
 .sign_in h2, .sign_upL h2,
 .sign_up h2{
@@ -247,6 +268,7 @@ form .text_field{
   position: relative;
   border-bottom: 2px solid #7C93C3;
   margin: 30px 0;
+
 }
 
 .text_field input{
@@ -257,7 +279,7 @@ form .text_field{
   background: none;
   outline: none;
 }
-  .text_field label
+  .text_field label 
 {
   position: absolute;
   left: 5px;
@@ -266,18 +288,21 @@ form .text_field{
   font-size: small;
   pointer-events: none;
   background: none;
+  text-align: center;
 }
 
 .file_field label{
   position: absolute;
   left: 128px;
   text-align: center;
-  color: #2c7da0;
+  color: #7C93C3;
   transform: translateY(-50%);
   font-size: small;
   pointer-events: none;
   background: none;
   margin-top: 20px;
+  margin-left: 120px;
+
 }
 .signup-option{
   color: #7C93C3;
@@ -285,10 +310,135 @@ form .text_field{
 top: -10px;
 font-size: small;
 }
+#reg{
+
+  display: inline-block;
+  position:center;
+  padding: 6px 12px;
+  left:30%;
+  margin-top: 5%;
+  background-color: #7C93C3;
+  color: #353535;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center; 
+}
 #singup-login{
   font-weight: bold;
   font-size: medium;
 }
+
+.select_container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+  height: 35px;
+  margin-top: 50px;
+  margin-left: 170px;
+}
+.select_field label {
+  position: absolute;
+  left: 185px;
+  text-align: center;
+  color: #7C93C3;
+  transform: translateY(-50%);
+  font-size: small;
+  pointer-events: none;
+  background: none;
+  margin-top: -15px;
+  margin-left: 100px;
+}
+.select_box{
+  border: none;
+  appearance: none;
+  width: 100%;
+  color: #7C93C3;
+  border-radius: 20px;
+  border: 2px solid #7C93C3;
+  text-align: center;
+  background: none;
+}
+
+.radio_field .radio_button{
+  background: #DEECFF;
+  border-radius: 20px;
+  width: 75px;
+  height: 27px;
+  padding-left: 4px;
+  padding-top: 4px;
+  display: inline-block;
+  position: relative;
+  left: 8px;
+}
+
+
+.radio_field .radio_button label{
+  background: none;
+  color: #7C93C3;
+  font-size: small;
+}
+
+.radio_field #grand_label{
+  position: relative;
+  left: 4px;
+  color: #7C93C3;
+  transform: translateY(-50%);
+  font-size: small;
+  pointer-events: none;
+  background: none;
+}
+
+.textarea_field textarea{
+  border: 2px solid #7C93C3;
+  border-radius: 10px;
+  color: #7C93C3;
+  font-size: small;
+  padding: 5px;
+  height: 80px;
+  position: relative;
+  margin-top: 10px;
+  width: 250px;
+  
+}
+
+#bio {
+  width: 250px;
+}
+.textarea_field label{
+  position: relative;
+  color: #7C93C3;
+  transform: translateY(-50%);
+  font-size: small;
+  pointer-events: none;
+  background: none;
+  padding: 148px;
+  top: 5px;
+}
+.photo{
+  border: 2px solid #7C93C3;
+  border-radius: 50px;
+  padding: 2px;
+  width: 250px;
+  position: relative;
+  margin-left: 35px;
+  margin-top: 40px;
+  height: 35px;
+  color: #7C93C3;
+}
+
+.photo::-webkit-file-upload-button{
+  background-color: #7C93C3;
+  border-radius: 50px;
+  border-style: none;
+  width: 100px;
+  height: 27px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
 /* end of login + signup layout */
 
  /************Manage profile**************/
