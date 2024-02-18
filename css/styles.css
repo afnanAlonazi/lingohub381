@@ -769,8 +769,9 @@ font-weight: bold;
   width: 200%;
   /* height: 200px; */
   position: relative;
-  left: 20%;
+  left: 11%;
   padding-top: 10%;
+  width: 145%;
 }
 
 .containercard .main-card .cards{
@@ -780,6 +781,13 @@ font-weight: bold;
   margin: 0 20px;
   justify-content: space-between;
 }
+/* .containercard .main-card .cards-session{
+  width: calc(5% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+} */
 .main-card .cards .card{
   width: calc(100% / 3 - 10px);
   background: #ffffff;
