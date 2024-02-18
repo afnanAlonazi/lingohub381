@@ -204,30 +204,17 @@ padding-top: 63px;
 
 
 .container {
-<<<<<<< HEAD
   width: 45%;
- height: 80%;
-=======
-   width: 45%;
  height: 80%; 
->>>>>>> cad2fa91d821db221af265979db9e0cc4f263108
   position: absolute;
   top: 50%;
   left: 50%;
   background-color: #fff;
   padding: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-<<<<<<< HEAD
   overflow-y: scroll; /* Add scrollbar when content exceeds viewport height */
 
   transform: translate(-50%, -50%);
-
-=======
-  /* overflow-y: scroll; Add scrollbar when content exceeds viewport height */
-
-  transform: translate(-50%, -50%);
->>>>>>> cad2fa91d821db221af265979db9e0cc4f263108
   border-radius: 10px;
   text-align: center;
 } 
@@ -765,5 +752,80 @@ font-weight: bold;
   border-color: black;
 }
 
+/* partner list layout */
+.containercard{
+  /* max-width: 950px;*/
+  width: 100%; 
+  overflow:hidden; 
+  padding: 2px 0;
+}
+.containercard .main-card{
+  display: inline-block;
+  /* justify-content: space-evenly;
+  transition: 1s;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; 
+  width: 200%;
+  /* height: 200px; */
+  position: relative;
+  left: 20%;
+  padding-top: 10%;
+}
 
+.containercard .main-card .cards{
+  width: calc(120% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  /* transition: all 0.4s ease; */
 
+}
+/* .main-card .cards .card:hover{
+  transform: translateY(-15px);
+} */
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+ .control-panel ul li {
+  display: inline-block;
+  position:center;
+  padding: 6px 12px;
+  left:50%;
+  background-color: #c7d3e1;
+  color: #353535;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+  text-align: center;
+} 
