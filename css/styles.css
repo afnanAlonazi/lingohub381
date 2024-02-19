@@ -51,6 +51,7 @@ margin-left: 220px;
   cursor: pointer;
   margin-right: auto;
  margin-top: 30px;
+ height: 200px;
 }
 .nav_bar {
   list-style: none;
@@ -1155,7 +1156,8 @@ h2 {
 }
 
 /* submit button formatting ((right side))*/
-/* input[type="submit"] {
+ #submit-btn {
+
   font-weight: lighter;
   font-size: medium;
   padding: 6px 12px;
@@ -1168,12 +1170,12 @@ h2 {
   margin-top: 25px;
   margin-left: 180px;
 
-} */
+} 
 
 /* submit button hover ((right side))*/
-/* input[type="submit"]:hover {
+#submit-btn:hover {
   background-color: #86d7a1;
-} */
+}
 
 /**************** end of Leave a review page *******************/
 
