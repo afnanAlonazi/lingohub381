@@ -1176,5 +1176,57 @@ h2 {
 } */
 
 /**************** end of Leave a review page *******************/
-
+/* ********** contact us layout *************** */
+.Form {
+  display: block;
+  width: 800px;
+  height: 780px;
+  background: rgb(248, 250, 219);
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+  border-style: solid;
+  border-radius: 25px;
+  font-size: 19px;
+  color: rgb(0, 111, 96);
+  border-color: black;
+}
+form {
+  color:#353535;
+}
+.FLabel {
+  display: block;
+  
+  padding-top: 15px;
+  padding-bottom: 2px;
+  text-align: left;
+   margin-left: 50px;
+  font-size: 21px;
+  color: #353535;
+  font-weight: 500;
+}
+.biocon {
+  height: 250px;
+  width: 770px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #c7d3e1;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border-radius: 10px;
+  padding: 0.375rem 0.75rem;
+  /* border: 1px solid #ced4da; */
+  overflow: auto;
+  font-weight: 650;
+  margin-left: 150px;
+}
+#context{
+height: 34px;
+width: 94%;
+border-radius: 4px;
+background-color: white;
+border: 1px solid gainsboro;
+padding: 7px 16px;
+}
 
