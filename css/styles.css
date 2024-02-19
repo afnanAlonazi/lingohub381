@@ -8,12 +8,18 @@
 } */
 html{
   font-family:Arial, sans-serif;
+  height: 100%;
+  box-sizing: border-box;
 }
 body{
-
+position: relative;
+margin: 0;
+min-height: 100%;
     display: flex ;
     flex-direction: column;
     min-height: 100%;
+    padding-bottom: 6.74rem;
+    box-sizing: inherit;
 }
 
 /* header layout */
@@ -61,7 +67,7 @@ margin-left: 220px;
 }
 
 .nav_bar li a:hover {
-  color: #b9e2f0;
+  color: #c7d3e1;
   transition: 0.5s;
 }
 
@@ -88,7 +94,7 @@ button {
   display: inline;
 }
 button:hover ,#Edit_profileB:hover,#delete_profileB:hover{
-  background-color: #b9e2f0;
+  background-color: #c7d3e1;
 } 
 
 /* end of header layout */
@@ -99,14 +105,18 @@ button:hover ,#Edit_profileB:hover,#delete_profileB:hover{
 footer{
   text-align: center;
   text-transform: uppercase;
-  padding-top: 35px;
-  margin-top: auto;
+  padding: 35px;
+
   position:absolute;
+  left:0;
+  right:0;
+  margin-top: auto;
   background: #7C93C3;
   color: #353535;
-  
-  bottom: -300px;
+  height: 125px;
+  bottom: 0;
   width: 100%;
+ 
 }
 .icons h4{
   top:-11px;
@@ -114,7 +124,7 @@ footer{
 }
 .icons a {
   background: #7C93C3   ;
-  color: #c7d3e1;
+  color: #a1a8b0;
   padding: 10px;
   top:-7px;
   position: relative;
@@ -128,7 +138,7 @@ footer{
  
    
     .tableF {
-      margin-top: -12px;
+    
       width: 100%;
 
     }
@@ -610,9 +620,10 @@ font-weight: bold;
           .textMultiline{
             width: 250px;
            } 
+
          .right ul li:hover {
           background-color: #7C93C3; /* Hover effect */}
-          .textMultiline{
+        .textMultiline{
             width: 250px;
            } 
      /* ****************** buttun format ****************/
@@ -622,6 +633,8 @@ font-weight: bold;
   border:none;
   font: 1em sans-serif;
   color: #353535;
+ 
+
 }
 #reedButton:hover {
   background-color: #e38d99;
@@ -741,7 +754,7 @@ font-weight: bold;
 }
 
 .Red {
-  color: rgb(254, 9, 9);
+  color: rgb(200, 35, 35);
 }
 
 .Gray {
@@ -750,7 +763,7 @@ font-weight: bold;
 
 .tableReq {
   
-  border-spacing: 1;
+  border-spacing: 4px;
   /* border-collapse: collapse;  */
   background-color:#c7d3e1 ;
   border-radius: 6px;
@@ -760,9 +773,24 @@ font-weight: bold;
   margin: 0 auto;
   position: relative;
   border-style: solid;
+  justify-content: center;
   border: 2px ;
   text-align: center;
   border-color: black;
+  top: 60px;
+}
+thead {
+  box-shadow: 0 10px 20px rgb(90, 143, 230);
+}
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+td {
+  padding: 1rem 2rem;
 }
 
 /* partner list layout */
@@ -782,8 +810,9 @@ font-weight: bold;
   width: 200%;
   /* height: 200px; */
   position: relative;
-  left: 20%;
+  left: 11%;
   padding-top: 10%;
+  width: 145%;
 }
 
 .containercard .main-card .cards{
@@ -793,6 +822,13 @@ font-weight: bold;
   margin: 0 20px;
   justify-content: space-between;
 }
+/* .containercard .main-card .cards-session{
+  width: calc(5% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+} */
 .main-card .cards .card{
   width: calc(100% / 3 - 10px);
   background: #ffffff;
@@ -842,4 +878,318 @@ font-weight: bold;
  
   text-align: center;
 } 
-/* ***************************************************************************** */
+
+/* ***************************************************************************** *
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Style session cards */
+.session-info {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 0px solid silver;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 285px;
+  margin: 20px;
+
+}
+
+.session-info img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  position: relative;
+  margin-right: 0px;
+}
+
+/* Style flag icon */
+.session-info .fi {
+  width: 40px;
+  height: 30px;
+  border-radius: 0%;
+  margin-bottom: 20px;
+  margin: 10px;
+  object-fit: cover;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* style info labels */
+.session-partner-label,
+.session-learner-label,
+.session-language-label,
+.session-date-label,
+.session-time-label
+,.session-price-label,
+ .partner-details-bio-label  , .partner-details-language-label
+, .partner-details-lable 
+{
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #353535;
+
+}
+
+/* style info */
+.session-partner,
+.session-learner,
+.session-language,
+.session-date,
+.session-time  .session-price,
+.partner-details-bio ,
+.partner-details-language
+.partner-details
+{
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #353535;
+  margin-left: 10px;
+}
+
+
+/* style button containers for all session pages */
+.button-container1 {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.button-container2 {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.button-container2 button {
+  margin-right: 10px;
+}
+
+/* Style contact button */
+.contact {
+  font-weight: lighter;
+  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: rgb(199, 211, 225);
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.contact:hover {
+  background-color: #7C93C3;
+}
+
+/* Style review button */
+.buttonreview {
+  font-weight: lighter;
+  font-size: medium;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: rgb(199, 211, 225);
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.buttonreview:hover {
+  background-color: #7C93C3;
+}
+
+/* h2 style for session pages */
+
+h2 {
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+  color: #353535;
+}
+
+/**************** end of all 4 session pages*******************/
+
+
+
+/****************start of Leave a review page *******************/
+
+/* leave a review box ((left+right)) */
+.contentrate {
+  position: relative;
+  margin-top: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, .08);
+}
+
+/* leave a review h2 ((left+right)) */
+.contentrate h2 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353535;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/*image side formatting ((left side)) */
+.image-container {
+  width: 27%;
+  background: #EEF5FF;
+  padding: 30px 25px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  text-align: center;
+  color: #353535;
+}
+/* image formatting((left side)) */
+.image-container img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+/* text formatting((left side)) */
+.partner-reviewed,
+.image-container p {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #353535;
+}
+
+/*form formatting ((right side)) */
+.form-container {
+  width: 73%;
+  background: #fff;
+  padding: 30px 30px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  align-items:center;
+  margin-left: auto;
+  color: #353535;
+}
+
+/*form group for each label+input ((right side)) */
+.form-group {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content:space-between;
+}
+
+/*form label formatting ((right side)) */
+.form-group label {
+  font-weight: bold;
+  color: #353535;
+}
+
+/* stars rating ((right side))*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked)>label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+  content: '★ ';
+}
+
+.rate>input:checked~label {
+  color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+  color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+  color: #c59b08;
+}
+
+/* fixing textarea space ((right side))  */
+.form-group textarea {
+  height: 50px;
+  width: 200px;
+  display: block;
+}
+
+/* submit button formatting ((right side))*/
+/* input[type="submit"] {
+  font-weight: lighter;
+  font-size: medium;
+  padding: 6px 12px;
+  background-color: #20bf55;
+  color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  margin-top: 25px;
+  margin-left: 180px;
+
+} */
+
+/* submit button hover ((right side))*/
+/* input[type="submit"]:hover {
+  background-color: #86d7a1;
+} */
+
+/**************** end of Leave a review page *******************/
+
+
