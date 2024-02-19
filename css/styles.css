@@ -702,9 +702,9 @@ font-weight: bold;
 .SubDiv {
   display: block;
   margin-top: 12px;
-  border: 1.5px solid;
-  border-radius: 10px;
-  background-color:#c7d3e1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color:#EEF5FF;
   margin-bottom: 10px;
   padding: 20px 10px 10px 10px;
 }
@@ -754,7 +754,7 @@ font-weight: bold;
 }
 
 .Red {
-  color: rgb(200, 35, 35);
+  color: rgb(254, 9, 9);
 }
 
 .Gray {
@@ -763,7 +763,7 @@ font-weight: bold;
 
 .tableReq {
   
-  border-spacing: 4px;
+  border-spacing: 1;
   /* border-collapse: collapse;  */
   background-color:#c7d3e1 ;
   border-radius: 6px;
@@ -773,24 +773,9 @@ font-weight: bold;
   margin: 0 auto;
   position: relative;
   border-style: solid;
-  justify-content: center;
   border: 2px ;
   text-align: center;
   border-color: black;
-  top: 60px;
-}
-thead {
-  box-shadow: 0 10px 20px rgb(90, 143, 230);
-}
-th {
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 0.7rem;
-  font-weight: 900;
-}
-td {
-  padding: 1rem 2rem;
 }
 
 /* partner list layout */
@@ -898,7 +883,7 @@ td {
   overflow: hidden;
   width: 285px;
   margin: 20px;
-
+  display: inline-block;
 }
 
 .session-info img {
@@ -1039,7 +1024,7 @@ h2 {
 .contentrate {
   position: relative;
   margin-top: 270px;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 700px;

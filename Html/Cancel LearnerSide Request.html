@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--problem in buttons-->
+
 <head>
     <title>Cancel Language Learning Request</title>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
     <style>
         .background-container {
-            background-color: rgba(112, 155, 255, 0.5); /* Semi-transparent background */
+            background-color: rgba(165, 187, 238, 0.5); 
             position: fixed;
             top: 0;
             left: 0;
@@ -17,19 +17,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-       
-     
         }
 
         .ManageDeleteBody {
-            max-width: 300px; /* Adjust the max-width of the box */
-            background: #fff; /* White background */
-            padding: 20px; /* Add some padding */
+          background: #fff; /* White background */
+            padding: 30px; /* Add some padding */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
             text-align: center;
-            max-width: 400px;
-           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
         }
 
         .ManageDeleteBody h3 {
@@ -40,11 +39,23 @@
             margin-bottom: 25px;
         }
 
-        .ManageDeleteBody input[type="submit"]{
-            display: inline;
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
         }
 
-     
+        /* Style individual buttons */
+        .ManageDeleteBody input[type="submit"] {
+            flex: 1; /* Distribute available space equally */
+            margin: 0 5px; /* Add some margin between buttons */
+            padding: 10px; /* Add padding to the buttons */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            background-color: #007bff; /* Button background color */
+            color: #fff; /* Text color */
+            cursor: pointer; /* Change cursor on hover */
+        }
     </style>
 </head>
 
@@ -53,12 +64,10 @@
         <div class="ManageDeleteBody">
             <h3>Cancel Request</h3>
             <h4>Are you sure you want to cancel this request?</h4>
-            <form>
-                <div>
-                    <input type="submit" name="Cancel_Request" id="cancel_Edit" value="Cancel Request">
-                    <input type="submit" name="Dont_Cancel" id="save_Edit" value="Don't Cancel">
-                </div>
-            </form>
+            <div class="button-container">
+                <input type="submit" name="Cancel_Request" id="cancel_Edit" value="Cancel Request">
+                <input type="submit" name="Dont_Cancel" id="save_Edit" value="Don't Cancel">
+            </div>
         </div>
     </div>
 </body>
