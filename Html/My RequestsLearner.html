@@ -13,7 +13,7 @@ Author:renad-->
     <style>
 
 #My-RequestsLearner { 
-        /* body specific for this page only */
+        
         margin: 8% auto;
         padding: 0;
         background-color: #ffffff;
@@ -25,7 +25,8 @@ Author:renad-->
         width: 100%; 
         max-width: 2000px; 
         border-radius: 10px; 
-        box-shadow: 5px 5px 5px 5px rgb(248, 247, 244);/* fix measerment*/
+        box-shadow: 5px 5px 5px 5px rgb(248, 247, 244);
+        
     }
 
 #My-RequestsLearner ul {
@@ -48,7 +49,7 @@ Author:renad-->
 }
 
 #My-RequestsLearner ul li {
-    border: 1px solid #ccc;
+    border: 1px #ccc;
     padding: 10px;
     margin: 10px 0;
     transition: background-color 0.3s;
@@ -63,27 +64,32 @@ Author:renad-->
 }
 #My-RequestsLearner ul h3{
   /* position list h to the left */
+ 
   margin-left: 5px;
     padding-left: 5px;  
-   
+
+    
     
 }
-/* i wanna add a scroll bar but its not working
-#My-RequestsLearner ul::-webkit-scrollbar {
-    width: 12px;
+.button-like-link {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #c7d3e1;
+    color: #353535;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-top: 4px;
 }
 
-#My-RequestsLearner ul::-webkit-scrollbar-track {
-    background-color: transparent;
+.button-like-link:hover {
+    background-color: #7C93C3;
 }
 
-#My-RequestsLearner ul::-webkit-scrollbar-thumb {
-    background-color: red;
-    border-radius: 6px;
-}
-
-
-*/
 
     </style>
 </head>
@@ -118,7 +124,7 @@ Author:renad-->
                 <p>Preferred Schedule: <time datetime="2024-02-13 07:00">2024-02-13 07:00 AM</time></p>
                 <p>Duration: 30 minutes</p>
                 <p>Comments: I want to be better at speaking and understanding native English speakers in my company.</p>
-                <!-- Links to edit and delete pages -->
+                <!-- Links to edit and cancel pages -->
 
                 <a href="Edit learnerSide request.html" class="button-like-link">Edit</a>
                 <a href="Cancel LearnerSide Request.html" class="button-like-link">Cancel Request</a>
@@ -126,7 +132,7 @@ Author:renad-->
         </span>
       
         
-    <!--can have more requests-->
+    <!--can have more requests later-->
     </ul>
 
 

@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--Cancel learner request:renad
-    بنات البوتون ابعاده غريبه على اني ماخذتها من ال css-->
+<!--problem in buttons-->
 <head>
     <title>Cancel Language Learning Request</title>
     <meta charset="UTF-8">
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
-  
+
     <style>
-        .background-container { /* is the name specfic not to get mixed up in the external later ?*/
-            background-color: #9cc4da; 
-            height: 100vh;
+        .background-container {
+            background-color: rgba(112, 155, 255, 0.5); /* Semi-transparent background */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+       
+     
         }
 
         .ManageDeleteBody {
-            max-width: 80%; 
-            background: #f2f4f5; 
-            padding: 30px;
-            border-radius: 10px; 
-            color: #353535;
-            text-align: center; 
-            box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
-        }
-
-        .ManageDeleteBody h3 {
-            margin-bottom: 15px; 
+            max-width: 300px; /* Adjust the max-width of the box */
+            background: #fff; /* White background */
+            padding: 20px; /* Add some padding */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+            text-align: center;
+            max-width: 400px;
            
         }
 
-        .ManageDeleteBody h4 {
-            margin-bottom: 25px; 
+        .ManageDeleteBody h3 {
+            margin-bottom: 15px;
         }
 
- 
+        .ManageDeleteBody h4 {
+            margin-bottom: 25px;
+        }
+
+        .ManageDeleteBody input[type="submit"]{
+            display: inline;
+        }
+
+     
     </style>
 </head>
+
 <body>
     <div class="background-container">
         <div class="ManageDeleteBody">
             <h3>Cancel Request</h3>
             <h4>Are you sure you want to cancel this request?</h4>
-            <input type="submit" name="Cansel_Request" id="cancel_Edit" value="Cancel Request">
-            <input type="submit" name="Dont_Cancel" id="save_Edit" value="Don't Cancel">
+            <form>
+                <div>
+                    <input type="submit" name="Cancel_Request" id="cancel_Edit" value="Cancel Request">
+                    <input type="submit" name="Dont_Cancel" id="save_Edit" value="Don't Cancel">
+                </div>
+            </form>
         </div>
     </div>
 </body>
+
 </html>

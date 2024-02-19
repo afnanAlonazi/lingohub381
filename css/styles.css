@@ -738,7 +738,7 @@ font-weight: bold;
 }
 
 .Red {
-  color: rgb(254, 9, 9);
+  color: rgb(200, 35, 35);
 }
 
 .Gray {
@@ -747,7 +747,7 @@ font-weight: bold;
 
 .tableReq {
   
-  border-spacing: 1;
+  border-spacing: 4px;
   /* border-collapse: collapse;  */
   background-color:#c7d3e1 ;
   border-radius: 6px;
@@ -757,9 +757,24 @@ font-weight: bold;
   margin: 0 auto;
   position: relative;
   border-style: solid;
+  justify-content: center;
   border: 2px ;
   text-align: center;
   border-color: black;
+  top: 60px;
+}
+thead {
+  box-shadow: 0 10px 20px rgb(90, 143, 230);
+}
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+td {
+  padding: 1rem 2rem;
 }
 
 /* partner list layout */
