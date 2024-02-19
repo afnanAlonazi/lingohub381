@@ -28,7 +28,7 @@ header  {
   display: flex;
   justify-content:flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 20px; 
   width:100%;
 }
 /* تسيق الروابط والازرار واللست */
@@ -50,6 +50,7 @@ margin-left: 220px;
 .logo{
   cursor: pointer;
   margin-right: auto;
+ margin-top: 30px;
 }
 .nav_bar {
   list-style: none;
@@ -179,8 +180,8 @@ margin : 5% ;
   background: none;
   background: linear-gradient(120deg, #7C93C3, #9eb8d9, #EEF5FF);
   height: 150px;
-  padding: 100px 50px; 
-  
+   /* padding: 100px 50px;  */
+   
 }
 #contentOfPartner,#contentOfLearner{ 
   position: absolute;
@@ -467,8 +468,10 @@ font-size: small;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 800px;
+  height: 420px;
   display: flex;
   box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  border-radius: 20px;
 } 
 
 
@@ -476,8 +479,8 @@ font-size: small;
   width: 40%;
   background: #EEF5FF;
   padding: 30px 25px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   text-align: center;
   color: #353535;
 }
@@ -490,12 +493,14 @@ font-size: small;
   
  } /**************img format*********** */
 
- .ManageProfileBody .right{
+ .ManageProfileBody .right ,.ManageProfileBody #DeleteProfile{
   width: 150%;
   background: #fff;
   padding: 30px 30px; 
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   color: #353535;
   
 
@@ -505,7 +510,7 @@ font-size: small;
   border-radius: 5px;
   margin-bottom: 10px;
   width: 70px;
-  margin-left: 300px;
+  margin-left: 345px;
  
 
 }
@@ -552,25 +557,33 @@ font-weight: bold;
     color: #8e9aaf;
     margin-bottom: 10px;
    } 
-.ManageProfileBody .right ul , #delet_account , #signin {
+.ManageProfileBody .right ul , #signin {
   margin-top: 20px;
   margin-left: 100px;
  
 }
-.ManageProfileBody .right #delete{
-  margin-top: 20px;
-  margin-left: 200px;
+.ManageProfileBody .right #delete 
+ {
+  margin-top: 120px;
+  margin-left: 275px;
 
+}
+.ManageProfileBody .right #learnerProfilbutton
+{
+  margin-top: 140px;
 }
 
 #password_deleteaccount{
   margin-top: 20px;
-
-
-}
-#password_deleteaccount{
   width: 75%;
+  margin-left:100px ;
 }
+#delet_acc{
+  margin-left:100px ;
+}
+
+
+
  /* to make our lonks leading to edit and delete page look like buttons */
  .right ul li {
             display: inline-block;
@@ -607,31 +620,34 @@ font-weight: bold;
           .textMultiline{
             width: 250px;
            } 
+
          .right ul li:hover {
           background-color: #7C93C3; /* Hover effect */}
-          .textMultiline{
+        .textMultiline{
             width: 250px;
            } 
      /* ****************** buttun format ****************/
 
-#cancel_Edit{
+#reedButton{
   background-color: #d73046;
   border:none;
   font: 1em sans-serif;
   color: #353535;
+ 
+
 }
-#cancel_Edit:hover {
+#reedButton:hover {
   background-color: #e38d99;
 
 }
-#save_Edit{
+#greenButton{
   background-color: #20bf55;
   border:none;
   font: 1em sans-serif;
   color: #353535;
 }
 
-#save_Edit:hover{
+#greenButton:hover{
   background-color: #86d7a1;
 
 }/* ******************accept-reject buttun format for acc****************/
@@ -847,6 +863,8 @@ font-weight: bold;
  
   text-align: center;
 } 
+
+/* ***************************************************************************** *
 .content {
   display: flex;
   justify-content: center;
@@ -1137,7 +1155,7 @@ h2 {
 }
 
 /* submit button formatting ((right side))*/
-input[type="submit"] {
+/* input[type="submit"] {
   font-weight: lighter;
   font-size: medium;
   padding: 6px 12px;
@@ -1150,12 +1168,13 @@ input[type="submit"] {
   margin-top: 25px;
   margin-left: 180px;
 
-}
+} */
 
 /* submit button hover ((right side))*/
-input[type="submit"]:hover {
+/* input[type="submit"]:hover {
   background-color: #86d7a1;
-}
+} */
 
 /**************** end of Leave a review page *******************/
+
 
