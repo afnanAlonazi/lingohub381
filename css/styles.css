@@ -457,17 +457,19 @@ font-size: small;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 800px;
+  height: 420px;
   display: flex;
   box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  border-radius: 20px;
 } 
 
 
-.ManageProfileBody .left ,.ManageProfileBody #DeleteProfile{
+.ManageProfileBody .left ,.ManageProfileBody #DeleteProfile ,#leftSign{
   width: 40%;
   background: #EEF5FF;
   padding: 30px 25px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   text-align: center;
   color: #353535;
 }
@@ -480,12 +482,14 @@ font-size: small;
   
  } /**************img format*********** */
 
- .ManageProfileBody .right{
+ .ManageProfileBody .right ,.ManageProfileBody #DeleteProfile,#rightSign{
   width: 150%;
   background: #fff;
   padding: 30px 30px; 
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   color: #353535;
   
 
@@ -829,3 +833,4 @@ font-weight: bold;
  
   text-align: center;
 } 
+/* ***************************************************************************** */

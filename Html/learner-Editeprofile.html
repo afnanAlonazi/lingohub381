@@ -11,20 +11,21 @@
 
 </head>
 
-<body id = "ProfileManage">
-    <header id = "PartnerHPage">
+<div class="content">
+    <header id = "LearnerHPage">
         <img class = "logo" src = "weblogo.gif" alt = "logo" height=50>
             
             <ul class = "nav_bar">
-                <li><a href = "langauge learning request.html">  Learing request</a></li>
-                <li><a href = "PartnerViewCurrentSessions.html">Current session</a></li>
-                <li><a href = "PartnerViewPreviousSessions.html">Previous session</a></li>
-                <li><a href = "RequestwithStatus.html">Request status</a></li>
-                <li><a href = "partner-Profile (2).html">Manage Profile</a></li>
+                <li><a href = "Job Request list.html"> Request</a></li>
+                <li><a href = "LearnerViewCurrentSessions.html">Current session</a></li>
+                <li><a href = "LearnerViewCurrentSessions.html">Previous session</a></li>
+                <li><a href = ".html">Partner list</a></li>
+                <li><a href = ".html">Manage Profile</a></li>
             </ul>
            
             <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
     </header>
+
 
 
 
@@ -44,12 +45,8 @@
                         <div class="data">
                             <h4>First name</h4> 
                             <input type = "text" placeholder="sara">
-                            <h4>age</h4> 
-                            <input type = "number" placeholder="28">
                             <h4>Email</h4> 
                             <input type = "text" placeholder="michel@gmail.com">
-                            <h4>Password</h4> 
-                            <input type = "password" placeholder="Enter new password">
                             <h4>city</h4> 
                             <select name = "city">
                                 <option disabled>- Select a city -</option>
@@ -72,21 +69,18 @@
                          <div class="data">
                             <h4>Last name</h4>
                             <input type = "text" placeholder="Michel">
-                            <h4>gender</h4>
-                            <input name="gender" type="radio" checked=""> Female  
-                            <input name="gender" type="radio"> Male 
-                            <h4>phone</h4> 
-                            <input type="text" name="phone" value= "" placeholder="0556199919" maxlength="10">
-                            <h4>bio</h4>  
-                            <textarea id = "bio" name = "bio" rows = "6" cols="17" placeholder ="short bio including languages spoken and cultural knowledge">
-                            </textarea>
+                            <h4>Password</h4> 
+                            <input type = "password" placeholder="Enter new password">
+                            <h4>Location</h4> 
+                            <input type="text" name="Location" value= "" placeholder="0556199919" >
+                          
                          </div>
 
                 
 
                     </div>
                     <ul>
-                       <li id="save_Edit"> <a href = "partner-Profile (2).html"><input  id="save_Edit" type="submit" value="Save Edit" >  </a></li>
+                       <li id="save_Edit"> <a href = "learner-profile.html"><input  id="save_Edit" type="submit" value="Save Edit" >  </a></li>
                        <li id="cancel_Edit"> <input  id="cancel_Edit" type="reset" value="Cancel Edit" ></li>
                     </ul>
          </div><!--End of class "right" -->
