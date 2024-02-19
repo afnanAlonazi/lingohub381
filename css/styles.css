@@ -1006,7 +1006,7 @@ h2 {
 .contentrate {
   position: relative;
   margin-top: 270px;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 700px;
