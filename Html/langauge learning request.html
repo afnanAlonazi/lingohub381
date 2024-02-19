@@ -12,46 +12,109 @@ Author:renad-->
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-             #request-Post-box {
+           #request-Post-box {
             background-color: #f7f7f7;
             border: 1px solid #e0e0e0;
             border-radius: 8px;
             padding: 20px;
-            margin: 20px auto; 
-            max-width: 400px; 
+            margin: 20px auto;
+            max-width: 400px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-          /* Style for select dropdown */
-          #request-Post-box select.form-control {
+        /* Radio button styles */
+        #request-Post-box input[type="radio"] {
             appearance: none;
-            -moz-appearance: none;
             -webkit-appearance: none;
-            padding: 10px;
+            -moz-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #80a5dd;
+            outline: none;
+            cursor: pointer;
+            margin-right: 5px;
+          
+        }
+
+        #request-Post-box input[type="radio"]:checked {
+            background-color: #80a5dd;
+
+        }
+
+        /* Textarea styles */
+        #request-Post-box textarea {
+            resize: none;
             border: 1px solid #ccc;
             border-radius: 5px;
-            background-color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            max-width: 360px;
+            margin-bottom: 10px;
+        }
+
+        /* Select styles */
+        #request-Post-box select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
             width: 100%;
             cursor: pointer;
+            margin-bottom: 10px;
         }
 
-        /* Style for select arrow icon */
-        #request-Post-box select-arrow {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            pointer-events: none;
+        /* Date input styles */
+        #request-Post-box input[type="datetime-local"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: #f7f7f7;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            cursor: pointer;
+          
+            margin-bottom: 10px;
+          
         }
 
-        /* Style for select arrow icon (using Font Awesome) */
-        #request-Post-box select-arrow::after {
-            content: "\f078"; /* FontAwesome arrow-down icon */
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            font-size: 12px;
-            color: #666;
+        /* Submit button styles */
+        #request-Post-box input[type="submit"] {
+           
+    background-position: 0%;
+    max-width: 300px;
+    margin: 0 auto; 
+    display: block; 
+}
+        
+        
+
+
+        /* Label styles */
+        #request-Post-box label {
+            margin-top: 5px;
+            margin-bottom: 5px; 
+            display: block;
+            font-weight: bold;
+            font-size: 14px; 
         }
+
+        /* Radio button labels styles */
+        #request-Post-box input[type="radio"]+label {
+        
+            display: inline-block;
+            margin-right: 10px;
+        }   
     </style>
 </head>
 
