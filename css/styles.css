@@ -686,9 +686,9 @@ font-weight: bold;
 .SubDiv {
   display: block;
   margin-top: 12px;
-  border: 1.5px solid;
-  border-radius: 10px;
-  background-color:#c7d3e1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color:#EEF5FF;
   margin-bottom: 10px;
   padding: 20px 10px 10px 10px;
 }
