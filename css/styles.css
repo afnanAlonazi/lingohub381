@@ -112,7 +112,7 @@ footer{
   margin-top: auto;
   background: #7C93C3;
   color: #353535;
-  height: 130px;
+  height: 125px;
   bottom: 0;
   width: 100%;
  
@@ -738,7 +738,7 @@ font-weight: bold;
 }
 
 .Red {
-  color: rgb(200, 35, 35);
+  color: rgb(254, 9, 9);
 }
 
 .Gray {
@@ -747,7 +747,7 @@ font-weight: bold;
 
 .tableReq {
   
-  border-spacing: 4px;
+  border-spacing: 1;
   /* border-collapse: collapse;  */
   background-color:#c7d3e1 ;
   border-radius: 6px;
@@ -757,34 +757,19 @@ font-weight: bold;
   margin: 0 auto;
   position: relative;
   border-style: solid;
-  justify-content: center;
   border: 2px ;
   text-align: center;
   border-color: black;
-  top: 60px;
-}
-thead {
-  box-shadow: 0 10px 20px rgb(90, 143, 230);
-}
-th {
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 0.7rem;
-  font-weight: 900;
-}
-td {
-  padding: 1rem 2rem;
 }
 
 /* partner list layout */
-/* .containercard{
+.containercard{
   /* max-width: 950px;*/
-  /* width: 100%; 
+  width: 100%; 
   overflow:hidden; 
   padding: 2px 0;
-}  */
-/* .containercard .main-card{
+}
+.containercard .main-card{
   display: inline-block;
   /* justify-content: space-evenly;
   transition: 1s;
@@ -793,19 +778,19 @@ td {
   background-size: cover; 
   width: 200%;
   /* height: 200px; */
-  /* position: relative;
+  position: relative;
   left: 11%;
   padding-top: 10%;
   width: 145%;
-}  */
+}
 
-/* .containercard .main-card .cards{
+.containercard .main-card .cards{
   width: calc(120% / 2 - 10px);
   display: flex;
   flex-wrap: wrap;
   margin: 0 20px;
   justify-content: space-between;
-} */
+}
 /* .containercard .main-card .cards-session{
   width: calc(5% / 2 - 10px);
   display: flex;
@@ -813,19 +798,19 @@ td {
   margin: 0 20px;
   justify-content: space-between;
 } */
-/* .main-card .cards .card{
+.main-card .cards .card{
   width: calc(100% / 3 - 10px);
   background: #ffffff;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); */
-  /* transition: all 0.4s ease; } */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  /* transition: all 0.4s ease; */
 
-
+}
 /* .main-card .cards .card:hover{
   transform: translateY(-15px);
 } */
-/* .cards .card .content{
+.cards .card .content{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -861,7 +846,7 @@ td {
   cursor: pointer;
  
   text-align: center;
-}  */
+} 
 .content {
   display: flex;
   justify-content: center;
@@ -880,7 +865,7 @@ td {
   overflow: hidden;
   width: 285px;
   margin: 20px;
-
+  display: inline-block;
 }
 
 .session-info img {
