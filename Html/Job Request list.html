@@ -1,19 +1,76 @@
 <!DOCTYPE html>
-<!-- Job requests for native partner Author: Renad -->
-<html lang="en">
+<!-- Job requests for native partner Author: Renad01-->
+
 <head>
     <meta charset="UTF-8">
     <title>Job Request List</title>
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <style>
+
+        #Job-Request-list{ 
+             /* body specficaition for this page only*/
+             
+            margin: 8% auto;
+            padding: 0;
+            background-color: #abc8f4;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            width: 100%; 
+            max-width: 1000px; 
+            border-radius: 10px; 
+        }
+
+        #Job-Request-list ul{
+            list-style: none;
+            position:relative;
+            width: 900px;
+            margin: 100px auto 0;
+            padding: 10px;
+            box-sizing:border-box ;
+            margin-top: 0;
+        }
+
+        #Job-Request-list ul li{
+            display: flex;
+            background: #eceef1;
+            padding: 10px 20px;
+            margin:5px 0;
+            transition: 0.5s;
+            cursor: pointer; /* Making the whole li clickable */
+        }
+
+        #Job-Request-list h3{
+            text-align: center;
+            margin-top: 20px; 
+            font-size: 24px; 
+            color: #333; 
+            margin-bottom: 0;
+        }
+
+        #Job-Request-list ul li:hover{
+            transform:scale(1.06) ;  
+            background: #77a8f1;
+        }
+
+        #Job-Request-list ul li span img {
+            width: 30px; 
+            height: auto; 
+            margin-right: 10px; 
+        }
+
+    </style>
 </head>
 
 <body>
-<!--header-->
-<header id = "LearnerHPage">
-    <img class = "logo" src = "weblogo.gif" alt = "logo" height=50>
-        
+    <!--header-->
+    <header id = "LearnerHPage">
+        <img class = "logo" src = "weblogo.gif" alt = "logo" height=50>
+            
         <ul class = "nav_bar">
             <li><a href = "Job Request list.html"> Request</a></li>
             <li><a href = "LearnerViewCurrentSessions.html">Current session</a></li>
@@ -21,27 +78,34 @@
             <li><a href = ".html">Partner list</a></li>
             <li><a href = ".html">Manage Profile</a></li>
         </ul>
-       
+        
         <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
-</header>
-<!--header end-->
+    </header>
+    <!--header end-->
 
-    <h2>Requests:</h2>
-    <ol>
-        <li>
-            <img src="femalelearner1.jpg" alt="Renad Yousef" width="100" height="100">
-            <a href="View language request details PartnerSide.html">Renad Yousef</a>
-        </li>
-        <li>
-            <img src="malelearner1.jpg" alt="Ahmad Alfarhan" width="100" height="100">
-            <a href="">Ahmad Alfarhan</a>
-        </li>
-        <li>
-            <img src="femalepartner1.jpg" alt="Nuha Alabudalmajeed" width="100" height="100">
-            <a href="">Nuha Alabudalmajeed</a>
-        </li>
-        <!-- Artificial data -->
-    </ol>
+    <div id="Job-Request-list">
+        <h3>Job Requests for you</h3>
+        <ul >
+            <div >
+                <li onclick="location.href='View language request details PartnerSide.html';">
+                    <span >
+                        <img src="C:\Users\renad\Dropbox\PC\Desktop\swe381 project\lingohub381\femalelearner1.jpg" alt="Profile picture" >
+                    </span>
+                    <span >  <a href="View language request details PartnerSide.html">Renad Yousef</a> </span>
+                </li>
+                <li onclick="location.href='#';">
+                    <span> <img src="C:\Users\renad\Dropbox\PC\Desktop\swe381 project\lingohub381\malelearner1.jpg" alt="Profile picture"></span>
+                    <span><a href="#">Ahmad Alfarhan</a></span>  
+                </li>
+                <li onclick="location.href='#';">
+                    <span><img src="C:\Users\renad\Dropbox\PC\Desktop\swe381 project\lingohub381\femalepartner1.jpg" alt="Profile picture"></span> 
+                    <span> <a href="">Nuha Alabudalmajeed</a></span> 
+                </li>
+                <!-- Artificial data -->
+            </div>
+        </ul>   
+    </div>
+
 
     <!--footer-->
 
@@ -57,33 +121,16 @@
             <th><a href="ContactUs.html"> Contact Us </a></th>
         </tr>
     </table>
-  <div class="icons">
-            <h4>Share the website</h4>
-        
-            <a href="https://facebook.com" target="_blank">
-                <i class="fa-brands fa-facebook fa-2x"></i>
-            </a>
+    <div class="icons">
+        <h4>Share the website</h4>
     
-            <a href="https://twitter.com" target="_blank">
-                <i class="fa-brands fa-twitter fa-2x"></i>
-            </a>
-    
-            <a href="https://linkedin.com" target="_blank">
-                <i class="fa-brands fa-linkedin fa-2x"></i>
-            </a>
-    
-            <a href="https://instagram.com" target="_blank">
-                <i class="fa-brands fa-instagram fa-2x"></i>
-            </a>
-    
-            <a href="https://web.whatsapp.com" target="_blank">
-                <i class="fa-brands fa-whatsapp fa-2x"></i>
-            </a>
-            <br>
-            lingo hub &copy 2024
-        </div>
-</footer>
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
 
+        <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter fa-2x"></i>
+        </a>
 
-
-</html>
+        <a href="https://linkedin.com" target="_blank">
+            <i class="fa-brands
