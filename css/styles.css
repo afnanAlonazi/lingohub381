@@ -777,6 +777,22 @@ font-weight: bold;
   border: 2px ;
   text-align: center;
   border-color: black;
+
+}
+
+thead {
+  box-shadow: 0 10px 10px #629bdc;
+}
+
+th {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+td {
+  padding: 1rem 2rem;
 }
 
 /* partner list layout */
