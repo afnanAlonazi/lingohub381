@@ -2,7 +2,6 @@
 
 <html>
 
-<head>
     <head>
         <meta charset="UTF-8">
         <title>My Profile</title>
@@ -16,19 +15,22 @@
         <img class = "logo" src = "weblogo.png" alt = "logo" height=50>
             
             <ul class = "nav_bar">
-                <li><a href = "langauge learning request.html"> Request</a></li>
+                <li><a href = "leanerhome.html"> Home</a></li>
+                <li><a href = "learnerReq.html"> Request</a></li>
                 <li><a href = "LearnerViewCurrentSessions.html">Current session</a></li>
                 <li><a href = "LearnerViewPreviousSessions.html">Previous session</a></li>
                 <li><a href = "partnerList.html">Partner list</a></li>
                 <li><a href = "learner-profile.html">Manage Profile</a></li>
             </ul>
            
-            <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
+            <div >
+                <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+            </div>
     </header>
 
 
 
-<body>
+
  <div class ="ManageProfileBody" >
         <div class="left">
             <img  src="femalelearner1.jpg" id="img" alt="Personal photo">   
@@ -52,28 +54,34 @@
                             <h4>Last name</h4>
                             <p>Ahmad</p>
                             <h4>Location</h4> 
-                            <p>lamaahmad@gmail.com</p>
+                            <p>Al-waten street , alsahafa , Riyadh</p>
                          </div>
 
                            
 
                     </div>
-                    <ul id="learnerProfilbutton">
+                    <br><br><br><br><br><br>
+                    <div class="button-container2">
+                        <button class="contact" onclick="window.location.href='learner-Editeprofile.html'">Edit profile</button>
+                        <button class="buttonreview" onclick="window.location.href='learner-deleteProfile.html'">Delete profile</button>
+                    </div>
+                    <!-- <ul id="learnerProfilbutton">
                        <li> <a href = "learner-Editeprofile.html">Edit profile</a></li>
                        <li> <a href = "learner-deleteProfile.html">Delete profile</a></li>
-                    </ul>
-         </div><!--End of class "right" -->
+                    </ul> -->
+         </div>
+         <!--End of class "right" -->
 
  </div><!--End of class "ManageProfileBody" -->
 
  <footer>
-    <table class="tableF">
+    <!-- <table class="tableF">
         <tr>
             <th><a href="aboutUs.html"> About Us </a></th>
             <th><a href="FAQ.html"> FAQs </a></th>
             <th><a href="ContactUs.html"> Contact Us </a></th>
         </tr>
-    </table>
+    </table> -->
   <div class="icons">
             <h4>Share the website</h4>
         
@@ -97,7 +105,7 @@
                 <i class="fa-brands fa-whatsapp fa-2x"></i>
             </a>
             <br>
-            lingo hub &copy 2024
+            lingo hub &copy; 2024
         </div>
 </footer>
     

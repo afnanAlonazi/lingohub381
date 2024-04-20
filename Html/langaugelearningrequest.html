@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<html lang="en">
+
 
 <!--Posting language learning request
 Author:renad-->
@@ -11,113 +11,7 @@ Author:renad-->
     <meta charset="utf-8">
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-           #request-Post-box {
-            background-color: #f7f7f7;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 25px auto 20px; 
-      
-            margin-bottom: 50px;
-            max-width: 400px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Radio button styles */
-        #request-Post-box input[type="radio"] {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 2px solid #80a5dd;
-            outline: none;
-            cursor: pointer;
-            margin-right: 5px;
-          
-        }
-
-        #request-Post-box input[type="radio"]:checked {
-            background-color: #80a5dd;
-
-        }
-
-        /* Textarea styles */
-        #request-Post-box textarea {
-            resize: none;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            max-width: 360px;
-            margin-bottom: 10px;
-        }
-
-        /* Select styles */
-        #request-Post-box select {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background-color: #f7f7f7;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            width: 100%;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
-
-        /* Date input styles */
-        #request-Post-box input[type="datetime-local"] {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background-color: #f7f7f7;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            width: 100%;
-            cursor: pointer;
-          
-            margin-bottom: 10px;
-          
-        }
-
-        /* Submit button styles */
-        #request-Post-box input[type="submit"] {
-           
-    background-position: 0%;
-    max-width: 300px;
-    margin: 0 auto; 
-    display: block; 
-}
-        
-        
-
-
-        /* Label styles */
-        #request-Post-box label {
-            margin-top: 5px;
-            margin-bottom: 5px; 
-            display: block;
-            font-weight: bold;
-            font-size: 14px; 
-        }
-
-        /* Radio button labels styles */
-        #request-Post-box input[type="radio"]+label {
-        
-            display: inline-block;
-            margin-right: 10px;
-        }   
-    </style>
+   
 </head>
 
 <body>
@@ -126,14 +20,16 @@ Author:renad-->
         <img class = "logo" src = "weblogo.png" alt = "logo" height=50>
             
             <ul class = "nav_bar">
-                <li><a href = "langauge learning request.html"> Request</a></li>
+                <li><a href = "leanerhome.html"> Home</a></li>
+                <li><a href = "learnerReq.html"> Request</a></li>
                 <li><a href = "LearnerViewCurrentSessions.html">Current session</a></li>
                 <li><a href = "LearnerViewPreviousSessions.html">Previous session</a></li>
                 <li><a href = "partnerList.html">Partner list</a></li>
                 <li><a href = "learner-profile.html">Manage Profile</a></li>
             </ul>
-           
-            <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
+            <div >
+                <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+            </div>
     </header>
 <!--header end-->
 
@@ -145,7 +41,8 @@ Author:renad-->
     
     <label for="lang">The language you want to learn</label>
     <div>
-        <select id="lang" name="language "  required>
+        <select id="lang" name="language" required> 
+            <option value="" disabled selected>Select a language...</option> <!-- Added a placeholder -->
        
         <option value="Afrikaans">Afrikaans</option>
         <option value="Albanian">Albanian</option>
@@ -161,7 +58,7 @@ Author:renad-->
         <option value="Czech">Czech</option>
         <option value="Danish">Danish</option>
         <option value="Dutch">Dutch</option>
-        <option selected value="English">English</option>
+        <option  value="English">English</option>
         <option value="Estonian">Estonian</option>
         <option value="Fiji">Fiji</option>
         <option value="Finnish">Finnish</option>
@@ -252,8 +149,9 @@ Author:renad-->
     
     <br><label for="duration">Session duration</label>
     <select id="duration" name="Session_duration"  required>
+        <option value="" disabled selected>Select duration...</option>
     <option>20 minutes</option>
-    <option selected>30 minutes</option>
+    <option >30 minutes</option>
     <option>40 minutes</option>
     <option>50 minutes</option>
     <option>60 minutes</option>
@@ -264,7 +162,7 @@ Author:renad-->
     <label for="comments">Comments (Optional)</label><br>
     <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
     
-    <br><input type="submit" value="Submit Request">
+    <br><div class="form-group" id="submit-button-group">     <input type="submit" value="Submit" id="submit-btn"> </div>
     <!--we should add a conformition box later on maybe its done with java script-->
     
     
@@ -272,15 +170,14 @@ Author:renad-->
     
 
 </div>
-
 <footer>
-    <table class="tableF">
+    <!-- <table class="tableF">
         <tr>
             <th><a href="aboutUs.html"> About Us </a></th>
             <th><a href="FAQ.html"> FAQs </a></th>
             <th><a href="ContactUs.html"> Contact Us </a></th>
         </tr>
-    </table>
+    </table> -->
   <div class="icons">
             <h4>Share the website</h4>
         
@@ -304,7 +201,7 @@ Author:renad-->
                 <i class="fa-brands fa-whatsapp fa-2x"></i>
             </a>
             <br>
-            lingo hub &copy 2024
+            lingo hub &copy; 2024
         </div>
 </footer>
 

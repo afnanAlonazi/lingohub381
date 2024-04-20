@@ -10,143 +10,61 @@ Author:renad-->
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <style>
-
-#My-RequestsLearner { 
-        
-        margin: 8% auto;
-        padding: 0;
-        background-color: #ffffff;
-        font-family: sans-serif;
-        display: flex;
-        flex-direction: row;
-        justify-content: center; 
-        align-items: baseline; 
-        width: 100%; 
-        max-width: 2000px; 
-        border-radius: 10px; 
-        box-shadow: 5px 5px 5px 5px rgb(248, 247, 244);
-        
-    }
-
-#My-RequestsLearner ul {
-    
-    list-style: none;
-    position: relative;
-    width: 500px;
-    margin: 100px auto 0;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 0;
-    /* position list to the left */
-    margin-left: 5px;
-    padding-left: 5px;
-    /*scrollbar if i make it work  */
-    overflow-y: auto;
-    max-height: 400px;
-
-  
-}
-
-#My-RequestsLearner ul li {
-    border: 1px #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    transition: background-color 0.3s;
-    text-align: left;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgb(248, 247, 244);
-}
 
 
-#My-RequestsLearner ul li:hover {
-    background-color: #f0f0f0;
-}
-#My-RequestsLearner ul h3{
-  /* position list h to the left */
- 
-  margin-left: 5px;
-    padding-left: 5px;  
-
-    
-    
-}
-.button-like-link {
-    display: inline-block;
-    padding: 4px 8px;
-    background-color: #c7d3e1;
-    color: #353535;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    margin-right: 5px;
-    margin-top: 4px;
-}
-
-.button-like-link:hover {
-    background-color: #7C93C3;
-}
 
 
-    </style>
+
 </head>
-   <!--header-->
-   <header id = "LearnerHPage">
-    <img class = "logo" src = "weblogo.gif" alt = "logo" height=50>
-        
-        <ul class = "nav_bar">
-            <li><a href = "Job Request list.html"> Request</a></li>
-            <li><a href = "LearnerViewCurrentSessions.html">Current session</a></li>
-            <li><a href = "LearnerViewCurrentSessions.html">Previous session</a></li>
-            <li><a href = ".html">Partner list</a></li>
-            <li><a href = ".html">Manage Profile</a></li>
-        </ul>
-       
-       <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
-</header>
-<!--header end--> 
+ 
 <body>
-   
+    <header id="PartnerHPage">
+        <img class="logo" src="weblogo.png" alt="logo" height=50>
 
-  <div id="My-RequestsLearner">
+        <ul class="nav_bar">
+            <li><a href = "Partnerhome.html"> Home</a></li>
+            <li><a href="JobRequestlist.html"> Learning request</a></li>
+            <li><a href="PartnerViewCurrentSessions.html">Current session</a></li>
+            <li><a href="PartnerViewPreviousSessions.html">Previous session</a></li>
+            <li><a href = "rate.html"> My rate </a></li>
+            <li><a href="RequestwithStatus.html">Request status</a></li>
+            <li><a href="partner-Profile.html">Manage Profile</a></li>
+        </ul>
 
-    <ul >
-        <h3>My Requests</h3>
-        <span>
+        <div >
+            <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+        </div>
+    </header>
 
-     <li>
-    
+    <div id="My-RequestsLearner">
+        <h3>My Requests:</h3>
+        
+        <ul>
+           
+            <li>
                 <p>Language: English</p>
                 <p>Proficiency Level: Beginner</p>
                 <p>Preferred Schedule: <time datetime="2024-02-13 07:00">2024-02-13 07:00 AM</time></p>
                 <p>Duration: 30 minutes</p>
-                <p>Comments: I want to be better at speaking and understanding native English speakers in my company.</p>
+                <p>Comments: I want to be better at speaking and understanding native English speakers in my
+                    company.</p>
                 <!-- Links to edit and cancel pages -->
-
-                <a href="Edit learnerSide request.html" class="button-like-link">Edit</a>
-                <a href="Cancel LearnerSide Request.html" class="button-like-link">Cancel Request</a>
-     </li>    
-        </span>
-      
-        
-    <!--can have more requests later-->
-    </ul>
-
-
-  </div>
- 
+                <a href="Edit%20learnerSide%20request.html" class="button-like-link">Edit</a>
+                <a href="Cancel%20LearnerSide%20Request.html" class="button-like-link">Cancel Request</a>
+                
+            </li>
+            <!--can have more requests later-->
+        </ul>
+    </div>
 
   <footer>
-    <table class="tableF">
+    <!-- <table class="tableF">
         <tr>
             <th><a href="aboutUs.html"> About Us </a></th>
             <th><a href="FAQ.html"> FAQs </a></th>
             <th><a href="ContactUs.html"> Contact Us </a></th>
         </tr>
-    </table>
+    </table> -->
   <div class="icons">
             <h4>Share the website</h4>
         
@@ -170,7 +88,7 @@ Author:renad-->
                 <i class="fa-brands fa-whatsapp fa-2x"></i>
             </a>
             <br>
-            lingo hub &copy 2024
+            lingo hub &copy; 2024
         </div>
 </footer>
 

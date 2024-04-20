@@ -15,20 +15,23 @@
         <img class = "logo" src = "weblogo.png" alt = "logo" height=50>
             
             <ul class = "nav_bar">
-                <li><a href = "langauge learning request.html"> Request</a></li>
+                <li><a href = "leanerhome.html"> Home</a></li>
+                <li><a href = "learnerReq.html"> Request</a></li>
                 <li><a href = "LearnerViewCurrentSessions.html">Current session</a></li>
-                <li><a href = "LearnerViewCurrentSessions.html">Previous session</a></li>
+                <li><a href = "LearnerViewPreviousSessions.html">Previous session</a></li>
                 <li><a href = "partnerList.html">Partner list</a></li>
                 <li><a href = "learner-profile.html">Manage Profile</a></li>
             </ul>
            
-            <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
+            <div >
+                <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+            </div>
     </header>
 
-    <h2>Partner list</h2>
+    <h2 id="h2session">Partner list</h2>
 
     <div class="content">
-
+        
         <div class="session-info">
             <img src="femalepartner1.jpg" id="Partnerpicture4" alt="Partner picture">
             <p>
@@ -38,17 +41,11 @@
                 <span class="partner-details-language-label"> proficiency:</span>
                 <span class="spartner-details-language">proficient in German</span>
                 <br>
-                <span class="session-price-label">Bio:</span>
-                <span class="spartner-details-bio"> has dedicated 15 years of teaching German. Fluent in the language with a wealth of experience, brings a unique blend of expertise and enthusiasm to her classroom.</span>
-                <br>
-                <span class="session-price-label">Price: </span>
-                <span class="session-price">250SR session/hr</span>
-                <br>
             </p>
 
             <div class="button-container2">
-                <button class="contact" onclick="window.location.href='mailto:amandalingo@gmail.com'">Contact</button>
-                <button class="buttonreview" onclick="window.location.href='rate.html'">Review</button>
+                <button class="contact" onclick="window.location.href='langaugelearningrequest.html'">Post requst</button>
+                <button class="buttonreview" onclick="window.location.href='partnerProfileForLearner.html'">Visit profile</button>
             </div>
 
         </div>
@@ -63,17 +60,11 @@
                 <span class="partner-details-language-label"> proficiency:</span>
                 <span class="partner-details-language">proficient in Arabic</span>
                 <br>
-                <span class="partner-details-bio-label">Bio:</span>
-                <span class="partner-details-bio"> continually refining teaching methods to ensure optimal learning outcomes for  students, coupled with innate ability to connect with learners of all levels</span>
-                <br>
-                <span class="session-price-label">Price: </span>
-                <span class="session-price">200SR session/hr</span>
-                <br>
             </p>
 
             <div class="button-container2">
-                <button class="contact" onclick="window.location.href='mailto:emmalingo@gmail.com'">Contact</button>
-                <button class="buttonreview" onclick="window.location.href='rate.html'">Review</button>
+                <button class="contact" onclick="window.location.href='langaugelearningrequest.html'">Post requst</button>
+                <button class="buttonreview" onclick="window.location.href='partnerProfileForLearner.html'">Visit profile</button>
             </div>
 
         </div>
@@ -88,114 +79,28 @@
                 <span class="partner-details-language-label"> proficiency:</span>
                 <span class="partner-details-language">Mastery in English</span>
                 <br>
-                <span class="partner-details-bio-label">Bio:</span>
-                <span class="partner-details-bio">educator with a Ph.D. in English and a strong command of both English. With expertise in language acquisition and pedagogy</span>
-                <br>
-                <span class="session-price-label">Price: </span>
-                <span class="session-price">150SR session/hr</span>
-                <br>
+               
             </p>
 
             <div class="button-container2">
-                <button class="contact" onclick="window.location.href='mailto:emmalingo@gmail.com'">Contact</button>
-                <button class="buttonreview" onclick="window.location.href='rate.html'">Review</button>
+                <button class="contact" onclick="window.location.href='langaugelearningrequest.html'">Post requst</button>
+                <button class="buttonreview" onclick="window.location.href='partnerProfileForLearner.html'">Visit profile</button>
             </div>
 
         </div>
 
     </div>
-<!-- 
-   <div class="containercard">
-   
-
-    <div class="main-card">
-      <div class="cards">
-        <div class="card">
-         <div class="content">
-           <div class="img">
-           <img src="personal-pic.jpg" alt="profilePic">
-           </div>
-           <div class="details">
-            <div class="name"><h3> lama </h3> </div>
-            <div class="pro"><h4> proficiency:</h4> proficient in french </div>
-             <div class="bio"><h4> bio:</h4>continually refining teaching methods to ensure optimal learning outcomes for  students, coupled with innate ability to connect with learners of all levels</div>
-           <div class="Price" ><h4  > Price:</h4>150SR session/hr</div>
-                <div class="control-panel">
-                    <ul>
-                        <li> <a href = "mailoto:nn@gmail.com"> Contact</a></li>
-                        <li> <a href = "rate.html"> Review</a></li>
-                     </ul>
-                    </div>
-             
-
-           </div>
-         </div>
-        </div>
-        
-
-
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="manteacher-pic.jpg" alt="profilePic">
-        </div>
-           <div class="details">
-             <div class="name"><h3> Smith </h3> </div>
-             <div class="pro"><h4> proficiency:</h4> Mastery in English advanced in Spanish </div>
-              <div class="bio"><h4> bio:</h4> educator with a Ph.D. in English and a strong command of both English and Spanish. With expertise in language acquisition and pedagogy.</div>
-            <div class="Price" ><h4  > Price:</h4>200SR session/hr</div>
-                <div class="control-panel">
-                    <ul>
-                        <li> <a href = "mailoto:nn@gmail.com"> Contact</a></li>
-                        <li> <a href = "rate.html"> Review</a></li>
-                     </ul>
-                    </div>
-            
-
-           </div>
-         </div>
-        </div>
-
-
-        <div class="card">
-         <div class="content">
-           <div class="img">
-            <img src="teacher-pic.jpg" alt="profilePic">
-        </div>
-           <div class="details">
-            <div class="name"><h3> Amanda </h3> </div>
-            <div class="pro"><h4> proficiency:</h4>  proficient in Portuguese </div>
-             <div class="bio"><h4> bio:</h4>has dedicated 15 years of teaching Portuguese. Fluent in the language with a wealth of experience, brings a unique blend of expertise and enthusiasm to her classroom. </div>
-           <div class="Price" ><h4  > Price:</h4>250SR session/hr</div>
-                <div class="control-panel">
-                    <ul>
-                        <li> <a href = "mailoto:nn@gmail.com"> Contact</a></li>
-                        <li> <a href = "rate.html"> Review</a></li>
-                     </ul>
-                    </div>
-            
-
-           </div>
-         </div>
-        </div>
-
-      </div>
-
-
-    </div> -->
-
-
 
 
 
              <footer>
-                <table class="tableF">
+                <!-- <table class="tableF">
                     <tr>
                         <th><a href="aboutUs.html"> About Us </a></th>
                         <th><a href="FAQ.html"> FAQs </a></th>
                         <th><a href="ContactUs.html"> Contact Us </a></th>
                     </tr>
-                </table>
+                </table> -->
               <div class="icons">
                         <h4>Share the website</h4>
                     
@@ -219,7 +124,7 @@
                             <i class="fa-brands fa-whatsapp fa-2x"></i>
                         </a>
                         <br>
-                        lingo hub &copy 2024
+                        lingo hub &copy; 2024
                     </div>
             </footer>
 </body>

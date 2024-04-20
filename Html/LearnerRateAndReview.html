@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +14,17 @@
         <img class = "logo" src = "weblogo.png" alt = "logo" height=50>
             
             <ul class = "nav_bar">
-                <li><a href = "langauge learning request.html"> Request</a></li>
+                <li><a href = "leanerhome.html"> Home</a></li>
+                <li><a href = "learnerReq.html"> Request</a></li>
                 <li><a href = "LearnerViewCurrentSessions.html">Current session</a></li>
                 <li><a href = "LearnerViewPreviousSessions.html">Previous session</a></li>
                 <li><a href = "partnerList.html">Partner list</a></li>
                 <li><a href = "learner-profile.html">Manage Profile</a></li>
             </ul>
            
-            <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
+            <div >
+                <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+            </div>
     </header>
 
     <div class="contentrate">
@@ -31,7 +35,7 @@
 
         </div>
         <div class="form-container">
-            <h2>Leave a Review </h2>
+            <h2 id="h2session">Leave a Review </h2>
             <div class="form-group">
                 <label for="fname">First Name:</label><br>
                 <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
@@ -71,13 +75,13 @@
     </div>
     
 <footer>
-    <table class="tableF">
+    <!-- <table class="tableF">
         <tr>
             <th><a href="aboutUs.html"> About Us </a></th>
             <th><a href="FAQ.html"> FAQs </a></th>
             <th><a href="ContactUs.html"> Contact Us </a></th>
         </tr>
-    </table>
+    </table> -->
     <div class="icons">
         <h4>Share the website</h4>
 
@@ -101,10 +105,9 @@
             <i class="fa-brands fa-whatsapp fa-2x"></i>
         </a>
         <br>
-        lingo hub &copy 2024
+        lingo hub &copy; 2024
     </div>
 </footer>
 </body>
-\
 
 </html>

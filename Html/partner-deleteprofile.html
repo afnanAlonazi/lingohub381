@@ -2,7 +2,6 @@
 
 <html>
 
-<head>
     <head>
         <meta charset="UTF-8">
         <title>Delete Profile</title>
@@ -12,33 +11,41 @@
 </head>
 
 <body id = "ProfileManage">
-    <header id = "PartnerHPage">
-        <img class = "logo" src = "weblogo.gif" alt = "logo" height=50>
-            
-            <ul class = "nav_bar">
-                <li><a href = "langauge learning request.html">  Learing request</a></li>
-                <li><a href = "PartnerViewCurrentSessions.html">Current session</a></li>
-                <li><a href = "PartnerViewPreviousSessions.html">Previous session</a></li>
-                <li><a href = "RequestwithStatus.html">Request status</a></li>
-                <li><a href = "partner-Profile (2).html">Manage Profile</a></li>
-            </ul>
-           
-            <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
+    <header id="PartnerHPage">
+        <img class="logo" src="weblogo.png" alt="logo" height=50>
+
+        <ul class="nav_bar">
+            <li><a href = "Partnerhome.html"> Home</a></li>
+        <li><a href="JobRequestlist.html"> Learning request</a></li>
+        <li><a href="PartnerViewCurrentSessions.html">Current session</a></li>
+        <li><a href="PartnerViewPreviousSessions.html">Previous session</a></li>
+        <li><a href = "rate.html"> My rate </a></li>
+        <li><a href="RequestwithStatus.html">Request status</a></li>
+        <li><a href="partner-Profile.html">Manage Profile</a></li>
+        </ul>
+
+        <div >
+            <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+        </div>
     </header>
 
     <div class ="ManageProfileBody" >
         <div class="right">
                        
             <h3>delete  Profile</h3>
-            <img src="Delete-Icon.png"  id="deletepic">  
+            <img src="Delete-Icon.png"  id="deletepic" alt="delete">  
             <h4 id="delet_acc">Please enter your password to delete your account:</h4>
-            <h5 id="delet_acc">This action will delete your profaile<h5>
+            <h5 id="delet_acc">This action will delete your profaile</h5>
             <input type = "password" placeholder="Enter new password" id="password_deleteaccount">
-
-            <ul id="delete">
+            <br><br><br><br><br><br>
+            <div class="button-container2">
+                <button class="reject" onclick="window.location.href='homepage.html'" >Delete </button>
+                <button class="contact" onclick="window.location.href='partner-Profile.html'" >Cancel </button>
+            </div> 
+            <!-- <ul id="delete">
                 <li id="reedButton"><a href = "homepage.html"><input  id="reedButton" type="submit" value="Delete "></a></li>
                 <li id="cancel_Edit"> <a href = "partner-Profile (2).html">Cancel</a></li>
-             </ul>
+             </ul> -->
     </div>
    
 
@@ -46,13 +53,13 @@
     </div>
 
     <footer>
-        <table class="tableF">
+        <!-- <table class="tableF">
             <tr>
                 <th><a href="aboutUs.html"> About Us </a></th>
                 <th><a href="FAQ.html"> FAQs </a></th>
                 <th><a href="ContactUs.html"> Contact Us </a></th>
             </tr>
-        </table>
+        </table> -->
       <div class="icons">
                 <h4>Share the website</h4>
             
@@ -76,7 +83,7 @@
                     <i class="fa-brands fa-whatsapp fa-2x"></i>
                 </a>
                 <br>
-                lingo hub &copy 2024
+                lingo hub &copy; 2024
             </div>
     </footer>     
 </body>

@@ -2,7 +2,7 @@
 
 <html>
 
-<head>
+
     <head>
         <meta charset="UTF-8">
         <title>Edit Profile</title>
@@ -12,43 +12,32 @@
 </head>
 
 <body id = "ProfileManage">
-<<<<<<< HEAD
+
     <header id="PartnerHPage">
         <img class="logo" src="weblogo.png" alt="logo" height=50>
 
         <ul class="nav_bar">
-            <li><a href="langauge learning request.html"> Learing request</a></li>
-            <li><a href="PartnerViewCurrentSessions.html">Current session</a></li>
-            <li><a href="PartnerViewPreviousSessions.html">Previous session</a></li>
-            <li><a href="RequestwithStatus.html">Request status</a></li>
-            <li><a href="partner-Profile (2).html">Manage Profile</a></li>
+            <li><a href = "Partnerhome.html"> Home</a></li>
+        <li><a href="JobRequestlist.html"> Learning request</a></li>
+        <li><a href="PartnerViewCurrentSessions.html">Current session</a></li>
+        <li><a href="PartnerViewPreviousSessions.html">Previous session</a></li>
+        <li><a href = "rate.html"> My rate </a></li>
+        <li><a href="RequestwithStatus.html">Request status</a></li>
+        <li><a href="partner-Profile.html">Manage Profile</a></li>
         </ul>
 
-        <a class="cta" href="homepage.html"><button>Sign out</button></a>
-=======
-    <header id = "PartnerHPage">
-        <img class = "logo" src = "logo.png" alt = "logo" height=250>
-            
-            <ul class = "nav_bar">
-                <li><a href="Job Request list.html"> Learing request</a></li>
-                <li><a href = "PartnerViewCurrentSessions.html">Current session</a></li>
-                <li><a href = "PartnerViewPreviousSessions.html">Previous session</a></li>
-                <li><a href = "RequestwithStatus.html">Request status</a></li>
-                <li><a href = "partner-Profile (2).html">Manage Profile</a></li>
-            </ul>
-           
-            <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
->>>>>>> 4e41db1fa6c70d4973cadfb6dcc0259ce826bf73
+        <div >
+            <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+        </div>
     </header>
-
 
 
 
  <div class ="ManageProfileBody" >
         <div class="left">
-            <img  src="defultpic.jpg" id="img" alt="Personal photo">
+            <img  src="femalepartner1.jpg" id="img" alt="Personal photo">
             <label id="personal-picLabel" for="personal-pic">update image</label>
-            <input type="file"name="personal-pic"  id="personal-pic">
+            <input type="file" name="personal-pic"  id="personal-pic">
             
         </div>
 
@@ -60,11 +49,11 @@
                             <h4>First name</h4> 
                             <input type = "text" placeholder="Amanda">
                             <h4>age</h4> 
-                            <input type = "number" placeholder="25">
+                            <input type = "number" placeholder="25"  min = "15" name ="age"  >
                             <h4>Email</h4> 
                             <input type = "text" placeholder="DavisAmanda@gmail.com">
                             <h4>Password</h4> 
-                            <input type = "password" placeholder="Enter new password">
+                            <input type = "password" placeholder="**********"  minlength="8" maxlength="16">
                             <h4>city</h4> 
                             <select name = "city">
                                 <option disabled>- Select a city -</option>
@@ -93,30 +82,33 @@
                             <h4>phone</h4> 
                             <input type="text" name="phone" value= "" placeholder="0556199919" maxlength="10">
                             <h4>bio</h4>  
-                            <textarea id = "bio" name = "bio" rows = "5" cols="17" placeholder ="short bio including languages spoken and cultural knowledge">
-                            </textarea>
+                            <textarea id="bio" name="bio" rows="5" cols="22" placeholder="such as, languages spoken and cultural knowledge ... etc."></textarea>
                          </div>
 
                 
 
                     </div>
-                    <ul>
+                     <div class="button-container2">
+                        <button class="accept" onclick="window.location.href='partner-Profile.html'" >Save Edit</button>
+                        <button class="reject" onclick="window.location.href='partner-Profile.html'"  >Cancel Edit</button>
+                    </div> 
+                    <!-- <ul>
                        <li id="greenButton"> <a href = "partner-Profile (2).html"><input  id="greenButton" type="submit" value="Save Edit" >  </a></li>
                        <li id="reedButton"> <input  id="reedButton" type="reset" value="Cancel Edit" ></li>
-                    </ul>
+                    </ul> -->
          </div><!--End of class "right" -->
 
  </div><!--End of class "ManageProfileBody" -->
 
    
  <footer>
-    <table class="tableF">
+    <!-- <table class="tableF">
         <tr>
             <th><a href="aboutUs.html"> About Us </a></th>
             <th><a href="FAQ.html"> FAQs </a></th>
             <th><a href="ContactUs.html"> Contact Us </a></th>
         </tr>
-    </table>
+    </table> -->
   <div class="icons">
             <h4>Share the website</h4>
         
@@ -140,7 +132,7 @@
                 <i class="fa-brands fa-whatsapp fa-2x"></i>
             </a>
             <br>
-            lingo hub &copy 2024
+            lingo hub &copy; 2024
         </div>
 </footer>
     

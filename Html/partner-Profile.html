@@ -2,7 +2,7 @@
 
 <html>
 
-<head>
+
     <head>
         <meta charset="UTF-8">
         <title>My Profile</title>
@@ -12,18 +12,22 @@
 </head>
 
 <body id = "ProfileManage">
-    <header id = "PartnerHPage">
-        <img class = "logo" src = "weblogo.gif" alt = "logo" height=50>
-            
-            <ul class = "nav_bar">
-                <li><a href = "langauge learning request.html">  Learing request</a></li>
-                <li><a href = "PartnerViewCurrentSessions.html">Current session</a></li>
-                <li><a href = "PartnerViewPreviousSessions.html">Previous session</a></li>
-                <li><a href = "RequestwithStatus.html">Request status</a></li>
-                <li><a href = "partner-Profile (2).html">Manage Profile</a></li>
-            </ul>
-           
-            <a class = "cta" href = "homepage.html"><button>Sign out</button></a>
+    <header id="PartnerHPage">
+        <img class="logo" src="weblogo.png" alt="logo" height=50>
+
+        <ul class="nav_bar">
+            <li><a href = "Partnerhome.html"> Home</a></li>
+        <li><a href="JobRequestlist.html"> Learning request</a></li>
+        <li><a href="PartnerViewCurrentSessions.html">Current session</a></li>
+        <li><a href="PartnerViewPreviousSessions.html">Previous session</a></li>
+        <li><a href = "rate.html"> My rate </a></li>
+        <li><a href="RequestwithStatus.html">Request status</a></li>
+        <li><a href="partner-Profile.html">Manage Profile</a></li>
+        </ul>
+
+        <div >
+            <button class="cta" onclick="window.location.href='homepage.html'">Sign out</button>
+        </div>
     </header>
 
 
@@ -65,23 +69,27 @@
                            
 
                     </div>
-                    <ul>
+                    <div class="button-container2">
+                        <button class="contact" onclick="window.location.href='partner-EditProfile.html'">Edit profile</button>
+                        <button class="buttonreview" onclick="window.location.href='partner-deleteprofile.html'">Delete profile</button>
+                    </div>
+                    <!-- <ul>
                        <li> <a href = "partner-EditProfile.html">Edit profile</a></li>
                        <li> <a href = "partner-deleteprofile.html">Delete profile</a></li>
-                    </ul>
+                    </ul> -->
          </div><!--End of class "right" -->
 
  </div><!--End of class "ManageProfileBody" -->
 
 
  <footer>
-    <table class="tableF">
+    <!-- <table class="tableF">
         <tr>
             <th><a href="aboutUs.html"> About Us </a></th>
             <th><a href="FAQ.html"> FAQs </a></th>
             <th><a href="ContactUs.html"> Contact Us </a></th>
         </tr>
-    </table>
+    </table> -->
   <div class="icons">
             <h4>Share the website</h4>
         
@@ -105,7 +113,7 @@
                 <i class="fa-brands fa-whatsapp fa-2x"></i>
             </a>
             <br>
-            lingo hub &copy 2024
+            lingo hub &copy; 2024
         </div>
 </footer>
     
