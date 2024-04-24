@@ -3,13 +3,13 @@
         <img class="logo" src="weblogo.png" alt="logo" height=50>
 
         <ul class="nav_bar">
-            <li><a href = "Partnerhome.html"> Home</a></li>
-        <li><a href="JobRequestlist.html"> Learning request</a></li>
-        <li><a href="PartnerViewCurrentSessions.html">Current session</a></li>
-        <li><a href="PartnerViewPreviousSessions.html">Previous session</a></li>
-        <li><a href = "rate.html"> My rate </a></li>
-        <li><a href="RequestwithStatus.html">Request status</a></li>
-        <li><a href="partner-Profile.html">Manage Profile</a></li>
+         <li><a href = "Partnerhome.php"> Home</a></li>
+        <li><a href="JobRequestlist.php"> Learning request</a></li>
+         <li><a href="RequestwithStatus.php">Request status</a></li>
+        <li><a href="PartnerViewCurrentSessions.php">Current session</a></li>
+        <li><a href="PartnerViewPreviousSessions.php">Previous session</a></li>
+        <li><a href = "rate.php"> My rate </a></li>
+        <li><a href="partner-Profile.php">Manage Profile</a></li>
         </ul>
 
         <div >
