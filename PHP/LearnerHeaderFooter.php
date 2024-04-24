@@ -3,10 +3,11 @@
                 
                 <ul class = "nav_bar">
                     <li><a href = "leanerhome.php"> Home</a></li>
+                        <li><a href = "partnerList.php">Partner list</a></li>
                     <li><a href = "learnerReq.php"> Request</a></li>
                     <li><a href = "LearnerViewCurrentSessions.php">Current session</a></li>
                     <li><a href = "LearnerViewPreviousSessions.php">Previous session</a></li>
-                    <li><a href = "partnerList.php">Partner list</a></li>
+                  
                     <li><a href = "learner-profile.php">Manage Profile</a></li>
                 </ul>
                 <div >
