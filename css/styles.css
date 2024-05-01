@@ -15,6 +15,28 @@ min-height: 100%;
     padding-bottom: 6.74rem;
     box-sizing: inherit;
 }
+/* new css from renad Start*/
+/* to add star at the end of ur form input label and the red note preseding it*/
+.redNote{
+  color: #ff7f7f !important; 
+  margin: 2px !important;
+  font-size: 12px !important;
+  font-weight: bold !important;
+
+}
+.required:after {
+  content:" *" !important;
+  color: red !important;
+}
+/* CSS stars apend adopted from:
+ https://stackoverflow.com/questions/11197671/use-css-to-automatically-add-required-field-asterisk-to-form-inputs */
+
+/*for checking if an input is empty in post request page*/
+empty{
+  border:1px solid red  !important;
+
+}
+/* new css end */
 
 /* header layout */
 
