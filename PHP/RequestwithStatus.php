@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,112 +25,68 @@
             <th>Name</th>
             <th>Language</th>
             <th>Date</th>
-            <th>Time</th>
-            <th>Price</th>
             <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="even-row">
-            <td>1</td>
-            <td>Lamia saad</td>
-            <td>German</td>
-            <td>3/3/2023</td>
-            <td>9:00AM - 10:00AM</td>
-            
-            <td>200 SAR</td>
-            <td class="Green">Accepted</td>
-          </tr >
-            <tr class="even-row">
-            <td>2</td>
-            <td>sarah Mohammad</td>
-            <td>German</td>
-            <td>3/2/2023</td>
-            <td>10:00AM - 11:30AM</td>
-           
-            <td>300SAR</td>
-            <td class="Red">Rejected</td>
-          </tr>
-          <tr class="even-row">
-            <td>3</td>
-            <td>Noura</td>
-            <td>Chinese</td>
-            <td>23/1/2024</td>
-            <td>11:00AM - 1:00PM</td>
-            
-            <td>400SAR</td>
-            <td class="Gray">Pending</td>
-          </tr>
-          <tr class="even-row">
-            <td>4</td>
-            <td>Amal</td>
-            <td>German</td>
-            <td>15/12/2023</td>
-            <td>6:00PM - 8:00PM</td>
-            
-            <td>400 SAR</td>
-            <td class="Red">Rejected</td>
-          </tr>
-          <tr class="even-row">
-            <td>5</td>
-            <td>Haifa</td>
-            <td>German</td>
-            <td>8/11/2023</td>
-            <td>1:00PM - 3:00PM</td>
-            
-            <td>400 SAR</td>
-            <td class="Red">Rejected</td>
-          </tr>
-          <tr class="even-row">
-            <td>6</td>
-            <td>Suasan</td>
-            <td>German</td>
-            <td>9/6/2023</td>
-            <td>7:00AM - 10:00AM</td>
-            
-            <td>600 SAR</td>
-            <td class="Gray">Pending</td>
-          </tr>
-          <tr class="even-row">
-            <td>7</td>
-            <td>Maya Mohammad</td>
-            <td>German</td>
-            <td>3/2/2023</td>
-            <td>10:00AM - 11:30AM</td>
-            <td>300 SAR</td>
-            <td class="Green">Accepted</td>
-          </tr>
-          <tr  class="even-row">
-            <td>8</td>
-            <td>Judy</td>
-            <td>German</td>
-            <td>1/8/2023</td>
-            <td>4:00PM - 7:00PM</td>
-            
-            <td>600 SAR</td>
-            <td class="Red">Rejected</td>
-          </tr>
-          <tr class="even-row">
-            <td>9</td>
-            <td>Saud Ibrahim</td>
-            <td>German</td>
-            <td>3/01/2023</td>
-            <td>3:00PM - 3:30PM</td>
-            <td>100 SAR</td>
-            <td class="Green">Accepted</td>
-          </tr>
-          <tr class="even-row">
-            <td>10</td>
-            <td>Haifa Ahmad</td>
-            <td>German</td>
-            <td>3/02/2023</td>
-            <td>9:00AM - 10:00AM</td>
-            <td>200 SAR</td>
-            <td class="Green">Accepted</td>
-          </tr>
-        </tbody>
+        <?php session_start();
+$host = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "lingo hub";
 
-    </table>
+// Create connection
+$conn = mysqli_connect($host, $username, $password, $dbname);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$query = "SELECT r.* 
+          FROM request AS r
+          JOIN session AS s ON r.partnerID = s.partnerID";
+$request = mysqli_query($conn, $query);
+$count = 1;
+if ($request) {
+    while ($row = mysqli_fetch_assoc($request)) {
+        $learnerID = $row['learnerID'];
+        $nameQuery = "SELECT firstName, lastName FROM learner WHERE learnerID = $learnerID";
+        $nameResult = mysqli_query($conn, $nameQuery);
+        
+        if ($nameResult && $nameRow = mysqli_fetch_assoc($nameResult)) {
+          $name = $nameRow['firstName'] . ' ' . $nameRow['lastName'];
+          
+          echo '<tr>
+                  <td>' . $count . '</td>
+                  <td>' . $name . '</td>
+                  <td>' . $row["LanguageName"] . '</td>
+                  <td>' . $row["post_time"] . '</td>';
+      
+          // Output the status column with appropriate class based on status value
+          if (strtolower($row["status"]) == "accepted") {
+              echo '<td class="Green">' . $row["status"] . '</td>';
+          } elseif (strtolower($row["status"]) == "pending") {
+              echo '<td class="Gray">' . $row["status"] . '</td>';
+          } elseif (strtolower($row["status"]) == "rejected") {
+              echo '<td class="Red">' . $row["status"] . '</td>';
+          } else {
+              echo '<td>' . $row["status"] . '</td>'; // Default case (no specific class)
+          }
+      
+          echo '</tr>';
+          $count++;
+      }
+      
+    }
+} else {
+    echo "Error: " . mysqli_error($conn);
+}
+
+?>
+
+
+   
     
 </body>
 </html>
