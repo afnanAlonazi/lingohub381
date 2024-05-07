@@ -9,7 +9,7 @@ session_start();
 $host = "127.0.0.1";
 $username = "root";
 $password = "";
-$dbname = "lingo hub";
+$dbname = "lingohub";
 
 // Create connection
 $conn = mysqli_connect($host, $username, $password, $dbname);
@@ -25,7 +25,7 @@ function get_all_rates()
     global $conn;
 
     // SQL query to retrieve all ratings, comments, learner names, and review date/time
-    $sql = "SELECT r.rating, r.comment, r.date, r.time, r.learnerfname , learnLname
+    $sql = "SELECT r.rating, r.comment, r.posted_rate, r.learnerfname , learnLname
             FROM review AS r 
             JOIN learner AS l ON l.learnerID = r.sessionID";
 
@@ -64,7 +64,7 @@ $rates = get_all_rates();
                     <div class="innerDiv">
                     <img class="userImg" src="defultpic.jpg" alt="userImg">
                         <strong class="Reviewers">' . $row["learnerfname"] . ' ' . $row["learnLname"] . '</strong><br>
-                        <p class="date">' . $row["time"] . ' ' . $row["date"] . '</p>';
+                        <p class="date">' . $row["posted_rate"] . '</p>';
 
             // Output star ratings based on the rating value
             for ($i = 1; $i <= $row["rating"]; $i++) {
